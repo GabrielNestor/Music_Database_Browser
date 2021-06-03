@@ -3,7 +3,6 @@ import tkinter
 
 conn = sqlite3.connect("music.sqlite")
 
-<<<<<<< HEAD
 
 class Scrollbox(tkinter.Listbox):
     def __init__(self, window, **kwargs):
@@ -15,8 +14,6 @@ class Scrollbox(tkinter.Listbox):
         self.scrollbar.grid(row=row, column=column, sticky="nsw", rowspan=rowspan)
         self["yscrollcommand"]=self.scrollbar.set
 
-=======
->>>>>>> parent of 05c5ae4 (We are creating a class that includes it's own scrollbar. It will inherit most of it's functionality.)
 mainWindow = tkinter.Tk()
 mainWindow.title("Music DB Browser")
 mainWindow.geometry("1024x768")
