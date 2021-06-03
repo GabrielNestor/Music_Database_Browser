@@ -3,6 +3,7 @@ import tkinter
 
 conn = sqlite3.connect("music.sqlite")
 
+
 class Scrollbox(tkinter.Listbox):
     def __init__(self, window, **kwargs):
         super().__init__(window, **kwargs)
